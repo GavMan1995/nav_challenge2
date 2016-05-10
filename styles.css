@@ -1,0 +1,306 @@
+
+/* ---Media Queries--- */
+@media (max-width: 800px) {
+  .bottom-nav {
+    display: none;
+  }
+
+  .margin {
+    margin: 0;
+  }
+
+  .body-div {
+    width: 100%;
+  }
+  .activity-feed, .latest-insights {
+    display: none;
+  }
+
+  .mobile-nav {
+    margin: 0;
+    width: 100%;
+    background-color: #17286f;
+    display: flex;
+  }
+
+  .mobile-nav:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 800px) {
+  .margin {
+    margin: 0 10em 0 10em;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* ---HTML components--- */
+ul {
+  justify-content: flex-end;
+  list-style: none;
+  flex-wrap: nowrap;
+  margin-right: 5em;
+}
+
+li {
+  margin: 1em;
+}
+
+img {
+  width: 75x;
+  height: 75px;
+  border-radius: 50%;
+}
+a {
+  text-decoration: none;
+  word-spacing: 2px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  padding: .5em 1em .5em 1em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #fbfbfb;
+}
+
+.bottom-nav {
+  margin: 0;
+  width: 100%;
+  background-color: #17286f;
+}
+
+/* ---Flex Containers--- */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.container {
+  order: 1;
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+  align-items: flex-start;
+}
+
+/* ---Text & Typography--- */
+.logo {
+  align-self: flex-start;
+}
+
+.hamburger {
+ width: 50px;
+ border-radius: 0;
+ margin-left: 30%;
+ align-self: flex-end;
+}
+
+.nav-link {
+  color: white;
+}
+
+.header {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.graph-header {
+  margin-top: -25px;
+}
+
+.top-header {
+  border-bottom: 1px solid #8c8c8c;
+  margin: .5em;
+  color: #01053c;
+  font-size: 30px;
+}
+
+.div-header {
+  margin-bottom: 1em;
+}
+
+.graph-btn {
+  align-self: flex-end;
+}
+
+.btn-insights {
+  font-size: 15px;
+  border: none;
+  border-radius: 0;
+  background-color: #00c2ff;
+  color: white;
+}
+
+.btn-insights:hover {
+  background-color: #008acd;
+}
+
+.notification {
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.credit-alert {
+  margin-bottom: 1em;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin: 1em 1em 0 0;
+}
+
+/* ---Divs--- */
+.body-div {
+  margin: 1em;
+  height: 300px;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.div-border {
+  border: 1px solid grey;
+}
+
+.wrapper-div {
+  display: flex;
+  align-content: flex-start;
+}
+
+.top-div {
+  display: flex;
+  flex-flow: column;
+  padding: 1em 1em 0 1em;
+  background-color: white;
+  border-bottom: 1px solid grey;
+}
+
+.graph-div {
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10%;
+  flex-shrink: 1;
+  flex-grow: 2;
+  background-color: white;
+}
+
+.graph-circle {
+  border: 6px solid green;
+  border-radius: 50%;
+  padding: 1em;
+  width: 3em;
+  height: 3em;
+  align-self: center
+}
+
+.bottom-div {
+  background-color: #cdfffe;
+  width: 100%;
+  margin-top: 1em;
+  border-top: 1px solid grey;
+  font-size: 12px;
+}
+
+.personal-scores {
+  order: 1;
+  flex-basis: 20%;
+  flex-direction: row;
+}
+
+.business-scores {
+  order: 2;
+  flex-basis: 40%;
+  flex-direction: row;
+  flex-grow: 2;
+}
+
+.tools {
+  background-color: white;
+  border: 1px solid grey;
+  order: 3;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  flex-basis: 50%;
+  flex-grow: 2;
+  flex-shrink: 1
+}
+
+.tools-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+  flex-grow: 2;
+  flex-shrink: 1;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.latest-insights {
+  text-align: center;
+  background-color: white;
+  order: 4;
+  flex-basis: 100%
+}
+
+.top-insights {
+  text-align: left;
+}
+
+.mid-insights {
+  padding: 2em 10em 5em 10em;
+  background-color: white;
+}
+.activity-feed {
+  background-color: white;
+  order: 2;
+  flex-basis: 30%;
+}
+
+.credit-alert-div{
+  padding: 1.5em;
+  border: 1px solid grey;
+  border-top: 0;
+  background-color: white;
+}
+
+.icon-div {
+  display: flex;
+  flex-direction: row;
+}
