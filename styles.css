@@ -184,7 +184,6 @@ button:hover {
 /* ---Divs--- */
 .body-div {
   margin: 1em;
-  height: 300px;
   flex-direction: column;
   flex-grow: 2;
 }
@@ -255,7 +254,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   align-content: flex-start;
   flex-basis: 50%;
   flex-grow: 2;
@@ -263,12 +261,12 @@ button:hover {
 }
 
 .tools-div {
+  padding: 3em 0  1em 1em;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 30%;
   flex-grow: 2;
   flex-shrink: 1;
-  justify-content: center;
   align-content: space-around;
 }
 
